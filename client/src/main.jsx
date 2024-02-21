@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
-import { Home, Orders, Customers } from './pages'
+import { Home, Orders, Customers, TableDetails } from './pages'
 import { store } from './redux/store.js' 
 import { Provider } from 'react-redux'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/orders',
         element: <Orders />
+      },
+      {
+        path: '/tabledetails/:id',
+        element: <TableDetails />
       }
     ]
   }

@@ -1,0 +1,57 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(50, 50, 50, 0.7);
+}
+
+.form {
+    background-color: white;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 500px;
+    min-width: 350px;
+    gap: 0.5em;
+}
+
+.form > input {
+    padding: 0.4em 1em;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--call-to-action-color);
+    color: var(--light-text);
+    font-weight: 600;
+}
+
+.form > .buttons_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: var(--dark-text);
+    cursor: pointer;
+}
+
+.btn_cancel {
+    background-color: var(--error-color);
+}
+
+.btn_book {
+    background-color: var(--call-to-action-color);
+}

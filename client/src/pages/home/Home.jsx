@@ -3,8 +3,11 @@ import { Tables } from '../../components'
 import { useQueryClient, useQuery } from '@tanstack/react-query'
 import './Home.css'
 import { getTables } from '../../api/tablesApi'
+import { useSelector } from 'react-redux'
 
 const Home = () => {
+    const { currentTheme } = useSelector((state) => state.theme)
+
     const queryClient = useQueryClient()
     const {
         isLoading,
@@ -21,7 +24,9 @@ const Home = () => {
 
   return (
     <div className='home_content'>
-        <div className="home_content_header">
+        <div className="home_content_header" style={{
+            color: `var(--${currentTheme}-text)`
+        }}>
             <h2>Tables</h2>
             <p>{tables.length} Tables</p>
         </div>
