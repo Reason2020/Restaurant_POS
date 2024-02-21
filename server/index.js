@@ -1,6 +1,7 @@
 const express = require('express')
 const morgan = require('morgan')
 require('dotenv').config()
+const cors = require('cors')
 const tablesRoute = require('./routes/tables')
 
 const app = express()
@@ -9,6 +10,7 @@ const SERVERPORT = process.env.SERVERPORT
 //middlewares
 app.use(express.json())
 app.use(morgan('tiny'))
+app.use(cors())
 
 //routes
 app.get('/test', (req, res) => {

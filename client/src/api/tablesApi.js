@@ -1,13 +1,13 @@
 import axios from 'axios'
 
 const tablesApi = axios.create({
-    baseURL: "http://localhost:3500"
+    baseURL: "http://localhost:3001/api/v1"
 })
 
 export const getTables = async () => {
-    console.log('Hey we here...')
     const response = await tablesApi.get("/tables")
-    return response.data
+    console.log("Response: ", response.data.data);
+    return response.data.data
 }
 
 export default tablesApi

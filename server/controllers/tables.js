@@ -3,9 +3,9 @@ const db = require('../db')
 //get all tables
 const getAllTables = async (req, res) => {
     try {
-        const response = await db.query('SELECT * FROM tables')
+        const response = await db.query('SELECT * FROM tables ORDER BY table_id')
         if (response.rowCount > 0) {
-            res.status(200).json({
+            return res.status(200).json({
                 success: true,
                 messsage: 'Got all tables',
                 data: response.rows

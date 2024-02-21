@@ -14,7 +14,7 @@ const Tables = ({ tables }) => {
         {
             tables?.map((table) => (
                 <TableCard 
-                    key={table.id} 
+                    key={table.table_id} 
                     table={table}
                     setModalVisible={setModalVisible}
                     setActiveTable={setActiveTable} />

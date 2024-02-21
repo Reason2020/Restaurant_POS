@@ -19,6 +19,8 @@ const Home = () => {
         queryFn: getTables
     })
 
+    console.log('Data at home: ', tables)
+
     if(isLoading) return <p>Loading data...</p>
     if (isError) return <p>{error.message}</p>
 
