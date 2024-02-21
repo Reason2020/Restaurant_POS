@@ -1,0 +1,17 @@
+.table_card {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 2em;
+    border-radius: 15px;
+}
+
+.table_status_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-weight: 600;
+}

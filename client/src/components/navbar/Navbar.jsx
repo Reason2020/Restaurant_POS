@@ -38,7 +38,9 @@ const Navbar = () => {
                     className='navlinks' to={'/customers'}>Customers</Link></li>
             <li>
                 <div className='user_profile_icon'>
-                    <p>R</p>
+                    <p style={{
+                        color: `var(--${currentTheme}-text)`
+                    }}>R</p>
                 </div>
             </li>
         </ul>

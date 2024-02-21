@@ -1,0 +1,10 @@
+.home_content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem;
+}
+
+.home_content > :nth-child(2) {
+    /* flex-grow: 2; */
+}

@@ -1,0 +1,72 @@
+{
+    "tables": [
+        {
+            "id": "1",
+            "isBooked": true,
+            "username": "",
+            "contact": ""
+        },
+        {
+            "id": "2",
+            "isBooked": false,
+            "username": "",
+            "contact": ""
+        },
+        {
+            "id": "3",
+            "isBooked": false,
+            "username": "",
+            "contact": ""
+        },
+        {
+            "id": "4",
+            "isBooked": false,
+            "username": "",
+            "contact": ""
+        },
+        {
+            "id": "5",
+            "isBooked": false,
+            "username": "",
+            "contact": ""
+        },
+        {
+            "id": "6",
+            "isBooked": false,
+            "username": "",
+            "contact": ""
+        },
+        {
+            "id": "7",
+            "isBooked": false,
+            "username": "",
+            "contact": ""
+        },
+        {
+            "id": "8",
+            "isBooked": false,
+            "username": "",
+            "contact": ""
+        },
+        {
+            "id": "9",
+            "isBooked": false,
+            "username": "",
+            "contact": ""
+        },
+        {
+            "id": "10",
+            "isBooked": false,
+            "username": "",
+            "contact": ""
+        },
+        {
+            "id": "11",
+            "isBooked": false,
+            "username": "",
+            "contact": ""
+        }
+    ]
+}
+
+
