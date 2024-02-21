@@ -1,0 +1,17 @@
+.toggler_container {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle_btn {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+.logo_title {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.right_side {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navlinks { 
+    font-weight: 500;
+    color: var(--light-text);
+}
+
+.user_profile_icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 1.2rem;
+    background-color: var(--error-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-text);
+    font-weight: 600;
+}
