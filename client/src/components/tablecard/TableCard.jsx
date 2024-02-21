@@ -16,9 +16,7 @@ const TableCard = ({ table }) => {
         className='table_card'
         >
         <h3 className='table_title'>Table {table.id}</h3>
-        <p className='table_status_container' style={{
-            color: `var(--${currentTheme}-text)`
-        }}>Status <FaLongArrowAltRight /> {table.isBooked ? 'Booked' : 'Vacant'}</p>
+        <p className='table_status_container'>Status <FaLongArrowAltRight /> {table.isBooked ? 'Booked' : 'Vacant'}</p>
     </div>
   )
 }
