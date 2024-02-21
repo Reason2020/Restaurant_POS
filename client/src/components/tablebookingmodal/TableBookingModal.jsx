@@ -1,10 +1,26 @@
 import React, { useState } from 'react'
 import './TableBookingModal.css'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
+import { bookTable } from '../../api/tablesApi'
+import { useMutation } from '@tanstack/react-query'
 
 const TableBookingModal = ({ setModalVisible, activeTable, modalVisible }) => {
     const [ name, setName ] = useState('');
     const [ contact, setContact ] = useState('');
+
+    // const mutation = useMutation(bookTable)
+
+    // const handleTableBooking = (e) => {
+    //     e.preventDefault()
+
+    //     mutation.mutate({
+    //         id: activeTable,
+    //         username: name,
+    //         contact
+    //     })
+
+    //     setModalVisible(false)
+    // }
 
   return (
     <motion.div
@@ -19,6 +35,7 @@ const TableBookingModal = ({ setModalVisible, activeTable, modalVisible }) => {
         }}
         className='overlay'>
         <motion.form 
+            onSubmit={handleTableBooking}
             initial={{
                 scale: 0.5
             }}

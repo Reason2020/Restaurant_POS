@@ -10,4 +10,13 @@ export const getTables = async () => {
     return response.data.data
 }
 
+export const bookTable = async (id, username, contact ) => {
+    const response = await tablesApi.patch(`/tables/${id}`, {
+        action: 'book',
+        username,
+        contact
+    })
+    console.log("Response: ", response)
+} 
+
 export default tablesApi
